@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="weather-app">
+        <header class="weather-header">
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <h2 class="city-name">Mumbai, India</h2>
+            <button class="calendar-btn">
+                <i class="fa-regular fa-calendar"></i>
+            </button>
+        </header>
+        <section class="weather-main">
+            <div class="weather-icon">
+                <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <h1 class="temperature">29°</h1>
+            <p class="weather-description">Partly Cloudy</p>
+        </section>
+        <section class="weather-details">
+            <div class="weather-info">
+                <p>
+                    <i class="fa-solid fa-wind"></i>
+                    Wind
+                </p>
+                <span class="wind-value">12 km/h</span>
+            </div>
+            <div class="weather-info">
+                <p>
+                    <i class="fa-solid fa-droplet"></i>
+                    Humidity
+                </p>
+                <span class="humidity-value">65%</span>
+            </div>
+            <div class="weather-info">
+                <p>
+                  <i class="fa-solid fa-sun"></i>
+                    Sun Hours
+                </p>
+                <span class="sun-value">8h</span>
+            </div>
+        </section>
+        <section class="hourly-forecast">
+            <h2>
+                <i class="fa-regular fa-clock"></i>
+                Hourly Forecast
+            </h2>
+            <div class="hourly-cards">
+                <div class="card">
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                    <p>Now</p>
+                    <span>29°</span>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-cloud-sun-rain"></i>
+                    <p>5 PM</p>
+                    <span>28°</span>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                    <p>6 PM</p>
+                    <span>28°</span>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-cloud-moon-rain"></i>
+                    <p>7 PM</p>
+                    <span>27°</span>
+                </div>
+            </div>
+        </section>
+        <nav class="bottom-nav">
+            <button class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <button class="nav-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="nav-item">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <button class="nav-item">
+                <i class="fa-regular fa-map"></i>
+            </button>
+        </nav>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
